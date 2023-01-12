@@ -2,6 +2,7 @@ body,
 html{
     height: 100%;
     background: #f8fafc;
+
 }
 h1,
 h2,
@@ -10,6 +11,16 @@ h4,
 p{
     margin: 0;
     padding: 0;
+}
+h1,
+h2,
+h3,
+h4{
+    font-family: 'Prata', serif;
+}
+p,
+div{
+    font-family: 'Lato', sans-serif;
 }
 .navbar{
     display: flex;
