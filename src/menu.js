@@ -16,7 +16,7 @@ const createMenu = (content) => {
         const description = document.createElement('div');
 
         name.textContent = menu[i].name;
-        price.textContent = `${menu[i].price}`;
+        price.textContent = `$${menu[i].price}`;
         description.textContent = menu[i].description;
         item.appendChild(name);
         item.appendChild(price);
