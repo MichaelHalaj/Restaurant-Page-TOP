@@ -1,8 +1,7 @@
+import { removeAllChildren } from "./functions";
 const generate = () => {
     const content = document.getElementById('content');
-    while(content.firstChild){
-        content.removeChild(content.firstChild);
-    }
+    removeAllChildren(content);
     const home = document.createElement('h1');
     home.textContent = 'Welcome to the Restaurant';
 
