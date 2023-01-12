@@ -1,14 +1,24 @@
 import './style.css';
-import { generate } from './home';
+import createHome from './home';
 import createMenu from './menu';
 
-generate();
+const content = document.getElementById('content');
+const page = document.createElement('div');
+page.classList.add('page');
+
 const homeTab = document.createElement('div');
 const menuTab = document.createElement('div');
 
 homeTab.textContent = 'Home';
 menuTab.textContent = 'Menu';
-document.body.appendChild(homeTab);
-document.body.appendChild(menuTab);
-homeTab.addEventListener('click', generate);
-menuTab.addEventListener('click', createMenu);
+content.appendChild(homeTab);
+content.appendChild(menuTab);
+content.appendChild(page);
+
+createHome(page);
+homeTab.addEventListener('click', () => {
+    createHome(page);
+});
+menuTab.addEventListener('click', () => {
+    createMenu(page);
+});

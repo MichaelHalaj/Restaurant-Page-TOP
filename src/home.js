@@ -1,6 +1,5 @@
 import { removeAllChildren } from "./functions";
-const generate = () => {
-    const content = document.getElementById('content');
+const createHome = (content) => {
     removeAllChildren(content);
     const home = document.createElement('h1');
     home.textContent = 'Welcome to the Restaurant';
@@ -11,7 +10,4 @@ const generate = () => {
     content.appendChild(description);
 };
 
-
-export {
-    generate
-};
+export default createHome;

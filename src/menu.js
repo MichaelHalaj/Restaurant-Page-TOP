@@ -1,8 +1,7 @@
 import { removeAllChildren } from "./functions";
 const menuItem = (name, id, price, description) => ({ name, id, price, description });
 
-const createMenu = () => {
-    const content = document.getElementById('content');
+const createMenu = (content) => {
     removeAllChildren(content);
     let menu = [];
     let itemId = 0;
