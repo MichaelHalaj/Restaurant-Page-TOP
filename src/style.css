@@ -10,6 +10,11 @@ html{
     background-image: url('./kenta-kikuchi-ice-cream.jpg');
 
 }
+#content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 h1,
 h2,
 h3,
@@ -60,4 +65,10 @@ div{
 .navbar > div:hover::after{
     transform: scaleX(1);
     transform-origin: bottom;
+}
+.page{
+    width: 600px;
+    background-color: #1c191773;
+    align-self: center;
+    justify-self: center;
 }
