@@ -2,6 +2,9 @@ body,
 html{
     height: 100%;
     background: #f8fafc;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 
 }
 h1,
@@ -25,9 +28,33 @@ div{
 .navbar{
     display: flex;
     justify-content: center;
-    gap: 16px;
-    border-bottom: 1px solid black;
+    gap: 24px;
+    background: linear-gradient(180deg, #1c1917, #44403c);
+    box-shadow: 0 0 5px #44403c;
 }
 .navbar > div{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: #f1f5f9;
+    font-size: 24px;
+    font-family: 'Prata', serif;
+    padding: 8px;
+}
+.navbar > div::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 8px;
+    left: 0;
+    background-color: #f1f5f9;
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+}
 
+.navbar > div:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom;
 }
