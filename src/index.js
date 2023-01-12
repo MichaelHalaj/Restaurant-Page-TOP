@@ -6,7 +6,8 @@ import createContact from './contact';
 const content = document.getElementById('content');
 const page = document.createElement('div');
 page.classList.add('page');
-
+const navBar = document.createElement('div');
+navBar.classList.add('navbar');
 const homeTab = document.createElement('div');
 const menuTab = document.createElement('div');
 const contactTab = document.createElement('div');
@@ -15,9 +16,11 @@ homeTab.textContent = 'Home';
 menuTab.textContent = 'Menu';
 contactTab.textContent = 'Contact';
 
-content.appendChild(homeTab);
-content.appendChild(menuTab);
-content.appendChild(contactTab);
+navBar.appendChild(homeTab);
+navBar.appendChild(menuTab);
+navBar.appendChild(contactTab);
+
+content.appendChild(navBar);
 content.appendChild(page);
 
 createHome(page);
