@@ -1,19 +1,16 @@
 body,
 html{
-    height: 100vh;
+    height: 100%;
     background: #f8fafc;
     font-size: 16px;
     margin: 0;
     padding: 0;
-    width: 100%;
-    background-size: cover;
-    background-image: url('./kenta-kikuchi-ice-cream.jpg');
-
 }
 #content{
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
 }
 h1,
 h2,
@@ -67,8 +64,11 @@ div{
     transform-origin: bottom;
 }
 .page{
-    width: 600px;
+    width: 100%;
+    height: 100%;
+    margin: 60px;
     background-color: #1c191773;
     align-self: center;
     justify-self: center;
+    color: #f1f5f9;
 }
