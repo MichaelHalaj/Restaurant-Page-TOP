@@ -68,7 +68,7 @@ div{
 }
 .page{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     justify-content: center;
     align-items: center;
     gap: 16px;
@@ -85,4 +85,13 @@ div{
     flex-direction: column;
     align-items: center;
     margin: 16px;
+}
+.title{
+    font-size: 5em;
+}
+.welcome{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

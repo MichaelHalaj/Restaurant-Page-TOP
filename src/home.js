@@ -1,13 +1,18 @@
 import { removeAllChildren } from "./functions";
 const createHome = (content) => {
     removeAllChildren(content);
+    const welcome = document.createElement('div');
+    welcome.classList.add('welcome');
     const home = document.createElement('h1');
-    home.textContent = 'Welcome to the Restaurant';
+    home.classList.add('title');
+    home.textContent = 'Free-Z\'s Ice-cream';
 
     const description = document.createElement('p');
-    description.textContent = 'Aenean blandit justo enim, eu dignissim ex vehicula sit amet. In accumsan porttitor facilisis. Cras sagittis at est in volutpat. Etiam sagittis sed purus non elementum. Duis ipsum libero, venenatis.';
-    content.appendChild(home);
-    content.appendChild(description);
+    description.textContent = 'Enjoy ice cream from the coldest places on the planet.';
+    
+    welcome.appendChild(home);
+    welcome.appendChild(description);
+    content.appendChild(welcome);
 };
 
 export default createHome;
